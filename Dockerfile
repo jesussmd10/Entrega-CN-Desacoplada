@@ -10,5 +10,3 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código de la aplicación
 COPY ./app/ ./app/
-
-# El handler se especificará mediante ImageConfig.Command en el template.yml

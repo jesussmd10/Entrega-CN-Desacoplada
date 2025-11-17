@@ -15,8 +15,6 @@ Resources:
       ImageScanningConfiguration:
         ScanOnPush: false
       LifecyclePolicy:
-        # --- CORRECCIÓN ---
-        # El JSON debe estar en una sola línea
         LifecyclePolicyText: '{"rules":[{"rulePriority":1,"description":"Mantener últimas 2 imágenes de pokedex","selection":{"tagStatus":"any","countType":"imageCountMoreThan","countNumber":2},"action":{"type":"expire"}}]}'
 
 Outputs:

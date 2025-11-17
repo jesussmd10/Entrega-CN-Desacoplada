@@ -190,7 +190,6 @@
     </div>
 
     <script>
-        // --- JS del Modal de Configuración (del Tickets Board) ---
         let API_URL = '';
         let API_KEY = '';
 
@@ -230,13 +229,12 @@
 
         function logout() {
             if (confirm('¿Seguro que quieres cambiar la configuración de la API?')) {
-                // No borra el localStorage, solo muestra el modal
                 document.getElementById('configOverlay').style.display = 'flex';
                 document.getElementById('app').style.display = 'none';
             }
         }
 
-        // --- Función de Petición API (del Tickets Board) ---
+        // --- Función de Petición API ---
         async function apiRequest(endpoint, method = 'GET', body = null) {
             const options = {
                 method,
